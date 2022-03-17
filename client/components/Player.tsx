@@ -1,4 +1,4 @@
-import { Pause, PlayArrow } from "@mui/icons-material"
+import { Pause, PlayArrow, VolumeDown, VolumeUp } from "@mui/icons-material"
 import { Grid, IconButton } from "@mui/material"
 import React from "react"
 import styles from "../styles/Player.module.scss"
@@ -29,6 +29,8 @@ const Player = () => {
         <div>{track.name}</div>
         <div style={{ fontSize: 12, color: "gray" }}>{track.artist}</div>
       </Grid>
+      <TrackProgress left={0} right={100} onChange={() => ({})} />
+      <VolumeUp style={{ marginLeft: "auto" }} />
       <TrackProgress left={0} right={100} onChange={() => ({})} />
     </div>
   )
